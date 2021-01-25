@@ -41,18 +41,6 @@ namespace WazeCredit.Controllers
             };
             return View(messages);
         }
-        public IActionResult Index2()
-        {
-            var messages = new List<String>
-            {
-                HttpContext.Items["CustomMiddlewareTransient"].ToString(),
-                $"Transient Controller - {_transientService.GetGuid()}",
-                HttpContext.Items["CustomMiddlewareScoped"].ToString(),
-                $"Scoped Controller - {_scopedService.GetGuid()}",
-                HttpContext.Items["CustomMiddlewareSingleton"].ToString(),
-                $"Singleton Controller - {_singletonService.GetGuid()}",
-            };
-            return View(messages);
-        }
+
     }
 }
