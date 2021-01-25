@@ -1,16 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using WazeCredit.Models;
-using WazeCredit.Models.ViewModels;
-using WazeCredit.Service;
 using WazeCredit.Service.LifeTimeExample;
-using WazeCredit.Utility.AppSettingsClasses;
 
 namespace WazeCredit.Controllers
 {
@@ -41,6 +32,5 @@ namespace WazeCredit.Controllers
             };
             return View(messages);
         }
-
     }
 }
